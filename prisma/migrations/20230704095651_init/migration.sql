@@ -12,7 +12,7 @@ CREATE TABLE "User" (
 );
 
 -- CreateTable
-CREATE TABLE "Bookmarks" (
+CREATE TABLE "Bookmark" (
     "id" SERIAL NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
@@ -20,5 +20,5 @@ CREATE TABLE "Bookmarks" (
     "description" TEXT,
     "link" TEXT NOT NULL,
 
-    CONSTRAINT "Bookmarks_pkey" PRIMARY KEY ("id")
+    CONSTRAINT "Bookmark_pkey" PRIMARY KEY ("id")
 );
